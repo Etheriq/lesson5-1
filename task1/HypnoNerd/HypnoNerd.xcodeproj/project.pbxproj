@@ -16,7 +16,7 @@
 		290B2BFC1BEABB6D00E96E37 /* HypnosysView.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2BFB1BEABB6D00E96E37 /* HypnosysView.m */; };
 		290B2BFF1BEABC2E00E96E37 /* HypnosysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2BFE1BEABC2E00E96E37 /* HypnosysViewController.m */; };
 		290B2C021BEAC09400E96E37 /* ReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2C011BEAC09400E96E37 /* ReminderViewController.m */; };
-		290B2C041BEAC25400E96E37 /* Empty.xib in Resources */ = {isa = PBXBuildFile; fileRef = 290B2C031BEAC25400E96E37 /* Empty.xib */; };
+		292E09881BEB812E0049354F /* ReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 292E09871BEB812E0049354F /* ReminderViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,7 @@
 		290B2BFE1BEABC2E00E96E37 /* HypnosysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosysViewController.m; sourceTree = "<group>"; };
 		290B2C001BEAC09400E96E37 /* ReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderViewController.h; sourceTree = "<group>"; };
 		290B2C011BEAC09400E96E37 /* ReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderViewController.m; sourceTree = "<group>"; };
-		290B2C031BEAC25400E96E37 /* Empty.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Empty.xib; sourceTree = "<group>"; };
+		292E09871BEB812E0049354F /* ReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReminderViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +75,7 @@
 				290B2BFE1BEABC2E00E96E37 /* HypnosysViewController.m */,
 				290B2C001BEAC09400E96E37 /* ReminderViewController.h */,
 				290B2C011BEAC09400E96E37 /* ReminderViewController.m */,
+				292E09871BEB812E0049354F /* ReminderViewController.xib */,
 				290B2BE61BEABAF800E96E37 /* AppDelegate.h */,
 				290B2BE71BEABAF800E96E37 /* AppDelegate.m */,
 				290B2BE91BEABAF800E96E37 /* ViewController.h */,
@@ -84,7 +85,6 @@
 				290B2BF11BEABAF800E96E37 /* LaunchScreen.storyboard */,
 				290B2BF41BEABAF800E96E37 /* Info.plist */,
 				290B2BE31BEABAF800E96E37 /* Supporting Files */,
-				290B2C031BEAC25400E96E37 /* Empty.xib */,
 			);
 			path = HypnoNerd;
 			sourceTree = "<group>";
@@ -154,8 +154,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292E09881BEB812E0049354F /* ReminderViewController.xib in Resources */,
 				290B2BF31BEABAF800E96E37 /* LaunchScreen.storyboard in Resources */,
-				290B2C041BEAC25400E96E37 /* Empty.xib in Resources */,
 				290B2BF01BEABAF800E96E37 /* Assets.xcassets in Resources */,
 				290B2BEE1BEABAF800E96E37 /* Main.storyboard in Resources */,
 			);
@@ -324,6 +324,7 @@
 				290B2BF91BEABAF800E96E37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

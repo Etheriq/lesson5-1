@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HypnosysViewController.h"
+#import "ReminderViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,8 +21,17 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    HypnosysViewController *hypnoViewController = [[HypnosysViewController alloc] init];
-    self.window.rootViewController = hypnoViewController;
+    
+//    HypnosysViewController *hypnoViewController = [[HypnosysViewController alloc] init];
+    
+    NSBundle *appBundle = [NSBundle mainBundle];
+    
+    ReminderViewController *reminderViewController = [[ReminderViewController alloc] initWithNibName:@"ReminderViewController" bundle:appBundle];
+    
+    
+//    self.window.rootViewController = hypnoViewController;
+    self.window.rootViewController = reminderViewController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
