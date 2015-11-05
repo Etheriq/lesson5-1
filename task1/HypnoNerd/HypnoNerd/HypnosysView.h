@@ -10,6 +10,5 @@
 
 @interface HypnosysView : UIView
 
-@property (nonatomic) CGRect frame;
 
 @end

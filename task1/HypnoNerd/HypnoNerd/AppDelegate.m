@@ -22,15 +22,20 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-//    HypnosysViewController *hypnoViewController = [[HypnosysViewController alloc] init];
+    HypnosysViewController *hypnoViewController = [[HypnosysViewController alloc] init];
     
-    NSBundle *appBundle = [NSBundle mainBundle];
+//    NSBundle *appBundle = [NSBundle mainBundle];
+//    ReminderViewController *reminderViewController = [[ReminderViewController alloc] initWithNibName:@"ReminderViewController" bundle:appBundle];
     
-    ReminderViewController *reminderViewController = [[ReminderViewController alloc] initWithNibName:@"ReminderViewController" bundle:appBundle];
+    ReminderViewController *reminderViewController = [[ReminderViewController alloc] init];
     
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[hypnoViewController, reminderViewController];
     
 //    self.window.rootViewController = hypnoViewController;
-    self.window.rootViewController = reminderViewController;
+//    self.window.rootViewController = reminderViewController;
+  
+    self.window.rootViewController = tabBarController;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

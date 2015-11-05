@@ -16,11 +16,33 @@
 
 @implementation ReminderViewController
 
+#pragma mark - Init
+
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    if (self) {
+        self.tabBarItem.title = @"Reminder";
+        UIImage *tabImage = [UIImage imageNamed:@"Time.png"];
+        self.tabBarItem.image = tabImage;
+    }
+    
+    return self;
+}
+
 #pragma mark - Actions
 
 - (IBAction)addReminder:(id)sender {
     NSDate *date = self.datePicker.date;
     NSLog(@" reminder for %@", date);
+    
+    UILocalNotification *notif = [[UILocalNotification alloc] init];
+    notif.alertBody = @"Hypno time!";
+    notif.fireDate = date;
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification: notif];
+    
+    
 }
 
 #pragma mark - View
@@ -28,6 +50,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSLog(@"ReminderViewController loaded");
+}
+
+- (void) viewWillAppear: (BOOL) animated {
+    [super viewWillDisappear:animated];
+    
+    self.datePicker.minimumDate = [NSDate dateWithTimeIntervalSinceNow:60];
 }
 
 - (void)didReceiveMemoryWarning {
