@@ -14,6 +14,9 @@
 		290B2BF01BEABAF800E96E37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290B2BEF1BEABAF800E96E37 /* Assets.xcassets */; };
 		290B2BF31BEABAF800E96E37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290B2BF11BEABAF800E96E37 /* LaunchScreen.storyboard */; };
 		290B2BFC1BEABB6D00E96E37 /* HypnosysView.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2BFB1BEABB6D00E96E37 /* HypnosysView.m */; };
+		290B2BFF1BEABC2E00E96E37 /* HypnosysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2BFE1BEABC2E00E96E37 /* HypnosysViewController.m */; };
+		290B2C021BEAC09400E96E37 /* ReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2C011BEAC09400E96E37 /* ReminderViewController.m */; };
+		290B2C041BEAC25400E96E37 /* Empty.xib in Resources */ = {isa = PBXBuildFile; fileRef = 290B2C031BEAC25400E96E37 /* Empty.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,11 @@
 		290B2BF41BEABAF800E96E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		290B2BFA1BEABB6D00E96E37 /* HypnosysView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypnosysView.h; sourceTree = "<group>"; };
 		290B2BFB1BEABB6D00E96E37 /* HypnosysView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosysView.m; sourceTree = "<group>"; };
+		290B2BFD1BEABC2E00E96E37 /* HypnosysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypnosysViewController.h; sourceTree = "<group>"; };
+		290B2BFE1BEABC2E00E96E37 /* HypnosysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosysViewController.m; sourceTree = "<group>"; };
+		290B2C001BEAC09400E96E37 /* ReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderViewController.h; sourceTree = "<group>"; };
+		290B2C011BEAC09400E96E37 /* ReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderViewController.m; sourceTree = "<group>"; };
+		290B2C031BEAC25400E96E37 /* Empty.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Empty.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 			children = (
 				290B2BFA1BEABB6D00E96E37 /* HypnosysView.h */,
 				290B2BFB1BEABB6D00E96E37 /* HypnosysView.m */,
+				290B2BFD1BEABC2E00E96E37 /* HypnosysViewController.h */,
+				290B2BFE1BEABC2E00E96E37 /* HypnosysViewController.m */,
+				290B2C001BEAC09400E96E37 /* ReminderViewController.h */,
+				290B2C011BEAC09400E96E37 /* ReminderViewController.m */,
 				290B2BE61BEABAF800E96E37 /* AppDelegate.h */,
 				290B2BE71BEABAF800E96E37 /* AppDelegate.m */,
 				290B2BE91BEABAF800E96E37 /* ViewController.h */,
@@ -72,6 +84,7 @@
 				290B2BF11BEABAF800E96E37 /* LaunchScreen.storyboard */,
 				290B2BF41BEABAF800E96E37 /* Info.plist */,
 				290B2BE31BEABAF800E96E37 /* Supporting Files */,
+				290B2C031BEAC25400E96E37 /* Empty.xib */,
 			);
 			path = HypnoNerd;
 			sourceTree = "<group>";
@@ -142,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				290B2BF31BEABAF800E96E37 /* LaunchScreen.storyboard in Resources */,
+				290B2C041BEAC25400E96E37 /* Empty.xib in Resources */,
 				290B2BF01BEABAF800E96E37 /* Assets.xcassets in Resources */,
 				290B2BEE1BEABAF800E96E37 /* Main.storyboard in Resources */,
 			);
@@ -156,6 +170,8 @@
 			files = (
 				290B2BEB1BEABAF800E96E37 /* ViewController.m in Sources */,
 				290B2BFC1BEABB6D00E96E37 /* HypnosysView.m in Sources */,
+				290B2C021BEAC09400E96E37 /* ReminderViewController.m in Sources */,
+				290B2BFF1BEABC2E00E96E37 /* HypnosysViewController.m in Sources */,
 				290B2BE81BEABAF800E96E37 /* AppDelegate.m in Sources */,
 				290B2BE51BEABAF800E96E37 /* main.m in Sources */,
 			);
