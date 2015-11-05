@@ -1,60 +1,47 @@
 //
-//  ReminderViewController.m
+//  TestViewController.m
 //  HypnoNerd
 //
 //  Created by Yuriy T on 05.11.15.
 //  Copyright © 2015 Yuriy T. All rights reserved.
 //
 
-#import "ReminderViewController.h"
+#import "TestViewController.h"
 
-@interface ReminderViewController ()
+@interface TestViewController ()
 
-@property (nonatomic, weak) IBOutlet UIDatePicker *datePicker;
+@property (nonatomic, weak) IBOutlet UILabel *forRandomizeResultLabel;
 
 @end
 
-@implementation ReminderViewController
+@implementation TestViewController
+
+- (IBAction)generateRandomDigit:(id)sender {
+    int random = arc4random() % 20;
+    self.forRandomizeResultLabel.text = [NSString stringWithFormat:@"%i", random];
+}
 
 #pragma mark - Init
+
 
 - (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     
     if (self) {
-        self.tabBarItem.title = @"Reminder";
-        UIImage *tabImage = [UIImage imageNamed:@"Time.png"];
-        self.tabBarItem.image = tabImage;
+        self.tabBarItem.title = @"testVC";
+        
     }
     
     return self;
 }
 
-#pragma mark - Actions
-
-- (IBAction)addReminder:(id)sender {
-    NSDate *date = self.datePicker.date;
-    NSLog(@" reminder for %@", date);
-    
-    UILocalNotification *notif = [[UILocalNotification alloc] init];
-    notif.alertBody = @"Hypno time!";
-    notif.fireDate = date;
-    
-    [[UIApplication sharedApplication] scheduleLocalNotification: notif];
-}
-
-#pragma mark - View
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"ReminderViewController loaded");
-}
-
-- (void) viewWillAppear: (BOOL) animated {
-    [super viewWillDisappear:animated];
+    NSLog(@"TestViewController loaded");
     
-    self.datePicker.minimumDate = [NSDate dateWithTimeIntervalSinceNow:60];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

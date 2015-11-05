@@ -17,6 +17,8 @@
 		290B2BFF1BEABC2E00E96E37 /* HypnosysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2BFE1BEABC2E00E96E37 /* HypnosysViewController.m */; };
 		290B2C021BEAC09400E96E37 /* ReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2C011BEAC09400E96E37 /* ReminderViewController.m */; };
 		292E09881BEB812E0049354F /* ReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 292E09871BEB812E0049354F /* ReminderViewController.xib */; };
+		292E098C1BEBB4280049354F /* testView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 292E098B1BEBB4280049354F /* testView.xib */; };
+		292E098F1BEBB5390049354F /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 292E098E1BEBB5390049354F /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		290B2C001BEAC09400E96E37 /* ReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderViewController.h; sourceTree = "<group>"; };
 		290B2C011BEAC09400E96E37 /* ReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderViewController.m; sourceTree = "<group>"; };
 		292E09871BEB812E0049354F /* ReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReminderViewController.xib; sourceTree = "<group>"; };
+		292E098B1BEBB4280049354F /* testView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testView.xib; sourceTree = "<group>"; };
+		292E098D1BEBB5390049354F /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		292E098E1BEBB5390049354F /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +81,9 @@
 				290B2C001BEAC09400E96E37 /* ReminderViewController.h */,
 				290B2C011BEAC09400E96E37 /* ReminderViewController.m */,
 				292E09871BEB812E0049354F /* ReminderViewController.xib */,
+				292E098D1BEBB5390049354F /* TestViewController.h */,
+				292E098E1BEBB5390049354F /* TestViewController.m */,
+				292E098B1BEBB4280049354F /* testView.xib */,
 				290B2BE61BEABAF800E96E37 /* AppDelegate.h */,
 				290B2BE71BEABAF800E96E37 /* AppDelegate.m */,
 				290B2BE91BEABAF800E96E37 /* ViewController.h */,
@@ -158,6 +166,7 @@
 				290B2BF31BEABAF800E96E37 /* LaunchScreen.storyboard in Resources */,
 				290B2BF01BEABAF800E96E37 /* Assets.xcassets in Resources */,
 				290B2BEE1BEABAF800E96E37 /* Main.storyboard in Resources */,
+				292E098C1BEBB4280049354F /* testView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +179,7 @@
 			files = (
 				290B2BEB1BEABAF800E96E37 /* ViewController.m in Sources */,
 				290B2BFC1BEABB6D00E96E37 /* HypnosysView.m in Sources */,
+				292E098F1BEBB5390049354F /* TestViewController.m in Sources */,
 				290B2C021BEAC09400E96E37 /* ReminderViewController.m in Sources */,
 				290B2BFF1BEABC2E00E96E37 /* HypnosysViewController.m in Sources */,
 				290B2BE81BEABAF800E96E37 /* AppDelegate.m in Sources */,

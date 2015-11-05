@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HypnosysViewController.h"
 #import "ReminderViewController.h"
+#import "TestViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,17 +24,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     HypnosysViewController *hypnoViewController = [[HypnosysViewController alloc] init];
-    
-//    NSBundle *appBundle = [NSBundle mainBundle];
-//    ReminderViewController *reminderViewController = [[ReminderViewController alloc] initWithNibName:@"ReminderViewController" bundle:appBundle];
-    
     ReminderViewController *reminderViewController = [[ReminderViewController alloc] init];
+    TestViewController *testViewController = [[TestViewController alloc] initWithNibName:@"testView" bundle:nil];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[hypnoViewController, reminderViewController];
-    
-//    self.window.rootViewController = hypnoViewController;
-//    self.window.rootViewController = reminderViewController;
+    tabBarController.viewControllers = @[hypnoViewController, reminderViewController, testViewController];
   
     self.window.rootViewController = tabBarController;
     
