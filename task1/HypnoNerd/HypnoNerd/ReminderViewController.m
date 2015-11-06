@@ -38,7 +38,8 @@
     
     UILocalNotification *notif = [[UILocalNotification alloc] init];
     notif.alertBody = @"Hypno time!";
-    notif.fireDate = date;
+//    notif.fireDate = date;
+    notif.fireDate = [[NSDate date] dateByAddingTimeInterval:10 ];
     
     [[UIApplication sharedApplication] scheduleLocalNotification: notif];
 }
