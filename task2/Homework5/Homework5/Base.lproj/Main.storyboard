@@ -415,7 +415,7 @@
         <!--Title-->
         <scene sceneID="vu9-fH-xMm">
             <objects>
-                <viewController storyboardIdentifier="gg" id="aNi-de-kWU" customClass="GameOverViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameOverViewControllerID" id="aNi-de-kWU" customClass="GameOverViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ilg-26-7jr"/>
                         <viewControllerLayoutGuide type="bottom" id="oFf-Wn-Cc3"/>

@@ -81,8 +81,7 @@
 
 - (void) showGameOverVC {
     
-    
-    GameOverViewController *gameOverVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"gg"];
+    GameOverViewController *gameOverVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"GameOverViewControllerID"];
     
 //    GameOverViewController *gameOverVC = [[GameOverViewController alloc] init];
     [UIView beginAnimations:@"Showinfo" context:nil];

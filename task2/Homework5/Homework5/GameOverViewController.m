@@ -19,6 +19,8 @@
     // Do any additional setup after loading the view.
     
     NSLog(@"Game over will be showed");
+    self.navigationItem.title = @"Game over";
+    
 }
 
 - (void)didReceiveMemoryWarning {
