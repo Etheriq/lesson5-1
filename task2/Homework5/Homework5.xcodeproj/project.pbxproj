@@ -20,6 +20,7 @@
 		290B2C3B1BED72F400E96E37 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2C3A1BED72F400E96E37 /* GameViewController.m */; };
 		290B2C3E1BED797800E96E37 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2C3D1BED797800E96E37 /* TabBarViewController.m */; };
 		2980BED51BEE10DA00E0E711 /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2980BED41BEE10DA00E0E711 /* GameOverViewController.m */; };
+		2980BED91BEEAA6C00E0E711 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2980BED81BEEAA6C00E0E711 /* CustomViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		290B2C3D1BED797800E96E37 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		2980BED31BEE10DA00E0E711 /* GameOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverViewController.h; sourceTree = "<group>"; };
 		2980BED41BEE10DA00E0E711 /* GameOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverViewController.m; sourceTree = "<group>"; };
+		2980BED71BEEAA6C00E0E711 /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
+		2980BED81BEEAA6C00E0E711 /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 		290B2C101BED658100E96E37 /* Homework5 */ = {
 			isa = PBXGroup;
 			children = (
+				2980BED61BEEAA4700E0E711 /* CustomView */,
 				2980BED21BEE106E00E0E711 /* Game1Tab */,
 				290B2C291BED66D000E96E37 /* Models */,
 				290B2C141BED658100E96E37 /* AppDelegate.h */,
@@ -128,6 +132,15 @@
 				2980BED41BEE10DA00E0E711 /* GameOverViewController.m */,
 			);
 			name = Game1Tab;
+			sourceTree = "<group>";
+		};
+		2980BED61BEEAA4700E0E711 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				2980BED71BEEAA6C00E0E711 /* CustomViewController.h */,
+				2980BED81BEEAA6C00E0E711 /* CustomViewController.m */,
+			);
+			name = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +217,7 @@
 				2980BED51BEE10DA00E0E711 /* GameOverViewController.m in Sources */,
 				290B2C3E1BED797800E96E37 /* TabBarViewController.m in Sources */,
 				290B2C351BED66D000E96E37 /* Deck.m in Sources */,
+				2980BED91BEEAA6C00E0E711 /* CustomViewController.m in Sources */,
 				290B2C381BED66D000E96E37 /* PlayingCardDeck.m in Sources */,
 				290B2C371BED66D000E96E37 /* PlayingCard.m in Sources */,
 				290B2C3B1BED72F400E96E37 /* GameViewController.m in Sources */,
