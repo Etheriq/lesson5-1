@@ -18,6 +18,8 @@
 		290B2C361BED66D000E96E37 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2C2F1BED66D000E96E37 /* Game.m */; };
 		290B2C371BED66D000E96E37 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2C311BED66D000E96E37 /* PlayingCard.m */; };
 		290B2C381BED66D000E96E37 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2C331BED66D000E96E37 /* PlayingCardDeck.m */; };
+		290B2C3B1BED72F400E96E37 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2C3A1BED72F400E96E37 /* GameViewController.m */; };
+		290B2C3E1BED797800E96E37 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2C3D1BED797800E96E37 /* TabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,10 @@
 		290B2C311BED66D000E96E37 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
 		290B2C321BED66D000E96E37 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
 		290B2C331BED66D000E96E37 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
+		290B2C391BED72F400E96E37 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		290B2C3A1BED72F400E96E37 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		290B2C3C1BED797800E96E37 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		290B2C3D1BED797800E96E37 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,10 @@
 				290B2C151BED658100E96E37 /* AppDelegate.m */,
 				290B2C171BED658100E96E37 /* ViewController.h */,
 				290B2C181BED658100E96E37 /* ViewController.m */,
+				290B2C3C1BED797800E96E37 /* TabBarViewController.h */,
+				290B2C3D1BED797800E96E37 /* TabBarViewController.m */,
+				290B2C391BED72F400E96E37 /* GameViewController.h */,
+				290B2C3A1BED72F400E96E37 /* GameViewController.m */,
 				290B2C1A1BED658100E96E37 /* Main.storyboard */,
 				290B2C1D1BED658100E96E37 /* Assets.xcassets */,
 				290B2C1F1BED658100E96E37 /* LaunchScreen.storyboard */,
@@ -183,10 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290B2C3E1BED797800E96E37 /* TabBarViewController.m in Sources */,
 				290B2C351BED66D000E96E37 /* Deck.m in Sources */,
 				290B2C381BED66D000E96E37 /* PlayingCardDeck.m in Sources */,
 				290B2C191BED658100E96E37 /* ViewController.m in Sources */,
 				290B2C371BED66D000E96E37 /* PlayingCard.m in Sources */,
+				290B2C3B1BED72F400E96E37 /* GameViewController.m in Sources */,
 				290B2C161BED658100E96E37 /* AppDelegate.m in Sources */,
 				290B2C361BED66D000E96E37 /* Game.m in Sources */,
 				290B2C131BED658100E96E37 /* main.m in Sources */,
