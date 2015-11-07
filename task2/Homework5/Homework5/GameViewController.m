@@ -72,7 +72,11 @@
     if (self.game.gameFinished) {
         NSLog(@"Game finished");
         
-        [self showGameOverVC];
+        if (self.tabBarController.selectedIndex == 0) {
+                [self showGameOverVC];
+        } else if (self.tabBarController.selectedIndex == 1) {
+            [self performSegueWithIdentifier:@"pop" sender:nil];
+        }
     }
 }
 - (IBAction)forceShowingEnd:(UIButton *)sender {
@@ -112,7 +116,6 @@
     self.cardLogLabel.text = @"Card log is empty.";
     
     self.navigationItem.title = @"Card game";
-    
     
 }
 

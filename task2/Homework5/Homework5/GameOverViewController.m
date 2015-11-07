@@ -28,6 +28,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) viewDidAppear:(BOOL)animated {
+    [self performSelector:@selector(showDefaultView) withObject:nil afterDelay:3.0f];
+}
+     
+- (void) showDefaultView {
+    [self performSegueWithIdentifier:@"backToTabBar" sender:nil];
+}
+
 /*
 #pragma mark - Navigation
 
