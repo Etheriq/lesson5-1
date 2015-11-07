@@ -53,7 +53,7 @@
             </objects>
             <point key="canvasLocation" x="-295" y="-199"/>
         </scene>
-        <!--Item 1-->
+        <!--Title-->
         <scene sceneID="qed-Y5-Fmu">
             <objects>
                 <viewController id="N8K-Y0-yMn" customClass="GameViewController" sceneMemberID="viewController">
@@ -362,8 +362,20 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="ahW-Cc-6op"/>
-                    <navigationItem key="navigationItem" id="k7z-Oe-YHw"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="3TU-WA-lW7"/>
+                    <navigationItem key="navigationItem" title="Title" id="qqO-VK-D5b">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Jst-bn-DrB">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="frV-w4-DA5">
+                                <rect key="frame" x="233" y="7" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="End"/>
+                                <connections>
+                                    <action selector="forceShowingEnd:" destination="N8K-Y0-yMn" eventType="touchUpInside" id="HEh-ik-5EF"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="cardLogLabel" destination="jx0-Q1-dUJ" id="TRw-zs-Qhz"/>
@@ -393,11 +405,42 @@
                         <outletCollection property="cardsButton" destination="3bi-Yn-dAE" id="ANf-xe-9gK"/>
                         <outletCollection property="cardsButton" destination="yAN-AF-gy1" id="rZk-nZ-QyJ"/>
                         <outletCollection property="cardsButton" destination="fBC-Vl-Ah4" id="cqd-s7-Ujr"/>
+                        <segue destination="aNi-de-kWU" kind="presentation" id="fSP-Vm-NMv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ady-pP-712" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136" y="-516"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="vu9-fH-xMm">
+            <objects>
+                <viewController storyboardIdentifier="gg" id="aNi-de-kWU" customClass="GameOverViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ilg-26-7jr"/>
+                        <viewControllerLayoutGuide type="bottom" id="oFf-Wn-Cc3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uYy-IH-Czq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GameOver" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u60-Jo-D9u">
+                                <rect key="frame" x="72" y="273" width="177" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="7qw-TA-3SN"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rfv-s2-xg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="571" y="-516"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="2G8-5d-g0p">

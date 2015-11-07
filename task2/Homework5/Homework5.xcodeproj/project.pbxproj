@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		290B2C131BED658100E96E37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2C121BED658100E96E37 /* main.m */; };
 		290B2C161BED658100E96E37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2C151BED658100E96E37 /* AppDelegate.m */; };
-		290B2C191BED658100E96E37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2C181BED658100E96E37 /* ViewController.m */; };
 		290B2C1C1BED658100E96E37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290B2C1A1BED658100E96E37 /* Main.storyboard */; };
 		290B2C1E1BED658100E96E37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290B2C1D1BED658100E96E37 /* Assets.xcassets */; };
 		290B2C211BED658100E96E37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290B2C1F1BED658100E96E37 /* LaunchScreen.storyboard */; };
@@ -20,6 +19,7 @@
 		290B2C381BED66D000E96E37 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2C331BED66D000E96E37 /* PlayingCardDeck.m */; };
 		290B2C3B1BED72F400E96E37 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2C3A1BED72F400E96E37 /* GameViewController.m */; };
 		290B2C3E1BED797800E96E37 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B2C3D1BED797800E96E37 /* TabBarViewController.m */; };
+		2980BED51BEE10DA00E0E711 /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2980BED41BEE10DA00E0E711 /* GameOverViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,6 @@
 		290B2C121BED658100E96E37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		290B2C141BED658100E96E37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		290B2C151BED658100E96E37 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		290B2C171BED658100E96E37 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		290B2C181BED658100E96E37 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		290B2C1B1BED658100E96E37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		290B2C1D1BED658100E96E37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		290B2C201BED658100E96E37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +45,8 @@
 		290B2C3A1BED72F400E96E37 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		290B2C3C1BED797800E96E37 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		290B2C3D1BED797800E96E37 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		2980BED31BEE10DA00E0E711 /* GameOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverViewController.h; sourceTree = "<group>"; };
+		2980BED41BEE10DA00E0E711 /* GameOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,15 +79,12 @@
 		290B2C101BED658100E96E37 /* Homework5 */ = {
 			isa = PBXGroup;
 			children = (
+				2980BED21BEE106E00E0E711 /* Game1Tab */,
 				290B2C291BED66D000E96E37 /* Models */,
 				290B2C141BED658100E96E37 /* AppDelegate.h */,
 				290B2C151BED658100E96E37 /* AppDelegate.m */,
-				290B2C171BED658100E96E37 /* ViewController.h */,
-				290B2C181BED658100E96E37 /* ViewController.m */,
 				290B2C3C1BED797800E96E37 /* TabBarViewController.h */,
 				290B2C3D1BED797800E96E37 /* TabBarViewController.m */,
-				290B2C391BED72F400E96E37 /* GameViewController.h */,
-				290B2C3A1BED72F400E96E37 /* GameViewController.m */,
 				290B2C1A1BED658100E96E37 /* Main.storyboard */,
 				290B2C1D1BED658100E96E37 /* Assets.xcassets */,
 				290B2C1F1BED658100E96E37 /* LaunchScreen.storyboard */,
@@ -120,6 +117,17 @@
 				290B2C331BED66D000E96E37 /* PlayingCardDeck.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2980BED21BEE106E00E0E711 /* Game1Tab */ = {
+			isa = PBXGroup;
+			children = (
+				290B2C391BED72F400E96E37 /* GameViewController.h */,
+				290B2C3A1BED72F400E96E37 /* GameViewController.m */,
+				2980BED31BEE10DA00E0E711 /* GameOverViewController.h */,
+				2980BED41BEE10DA00E0E711 /* GameOverViewController.m */,
+			);
+			name = Game1Tab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,10 +201,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2980BED51BEE10DA00E0E711 /* GameOverViewController.m in Sources */,
 				290B2C3E1BED797800E96E37 /* TabBarViewController.m in Sources */,
 				290B2C351BED66D000E96E37 /* Deck.m in Sources */,
 				290B2C381BED66D000E96E37 /* PlayingCardDeck.m in Sources */,
-				290B2C191BED658100E96E37 /* ViewController.m in Sources */,
 				290B2C371BED66D000E96E37 /* PlayingCard.m in Sources */,
 				290B2C3B1BED72F400E96E37 /* GameViewController.m in Sources */,
 				290B2C161BED658100E96E37 /* AppDelegate.m in Sources */,
@@ -349,6 +357,7 @@
 				290B2C271BED658100E96E37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

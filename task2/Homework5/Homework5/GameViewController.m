@@ -7,6 +7,7 @@
 //
 
 #import "GameViewController.h"
+#import "GameOverViewController.h"
 
 #import "Game.h"
 #import "PlayingCardDeck.h"
@@ -48,6 +49,9 @@
     [self updateUI];
     self.gameLogLabel.text = @"Log is empty.";
     self.cardLogLabel.text = @"Card log is empty.";
+    
+    
+    
 }
 
 
@@ -64,6 +68,29 @@
         self.scoreLabel.text = [NSString stringWithFormat:@"Total score: %li", self.game.score];
         self.gameLogLabel.text = [NSString stringWithFormat:@"Opened %@, current score: %li", self.currentPlayCard.contents, self.game.currentScore];
     }
+    
+    if (self.game.gameFinished) {
+        NSLog(@"Game finished");
+        
+        [self showGameOverVC];
+    }
+}
+- (IBAction)forceShowingEnd:(UIButton *)sender {
+    [self showGameOverVC];
+}
+
+- (void) showGameOverVC {
+    
+    
+    GameOverViewController *gameOverVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"gg"];
+    
+//    GameOverViewController *gameOverVC = [[GameOverViewController alloc] init];
+    [UIView beginAnimations:@"Showinfo" context:nil];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    [UIView setAnimationDuration:0.75f];
+    [self.navigationController pushViewController:gameOverVC animated:NO];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.navigationController.view cache:NO];
+    [UIView commitAnimations];
 }
 
 -(NSString *) titleForCard:(Card *)card {

@@ -12,6 +12,7 @@
 
 @property (nonatomic, readwrite) NSInteger score;
 @property (nonatomic, strong) NSMutableArray *cards;
+@property (assign, nonatomic) NSInteger matchedCards;
 
 @end
 
@@ -26,7 +27,8 @@
 	if (self) {
 		for (NSUInteger i = 0; i < (count -1); i++) {
 			Card *card = [deck drawRandomCard];
-			
+            self.gameFinished = NO;
+            self.matchedCards = 0;
 			if (card) {
 				[self.cards addObject:card];
 			} else {
@@ -59,7 +61,7 @@ static const int COST_TO_CHOOSE = 1;
 	Card *card = [self cardAtIndex:index];
     self.currentScore = 0;
     int innerScore = 0;
-	
+    
 	if (!card.isMatched) {
 		if (card.isChosen) {
 			card.chosen = NO;
@@ -71,8 +73,8 @@ static const int COST_TO_CHOOSE = 1;
 					[chosenCards addObject:otherCard];
 				}
 			}
-			
-			if ([chosenCards count]) {
+ 
+            if ([chosenCards count]) {
 				int matchScore = [card match:chosenCards];
                 Card *anotherCard = [chosenCards firstObject];
 				if (matchScore) {
@@ -85,6 +87,7 @@ static const int COST_TO_CHOOSE = 1;
 					}
                     
                     self.matchLog = [NSString stringWithFormat:@"%@ and %@ is matched, your bonus is %i", card.contents, anotherCard.contents, innerScore];
+                    self.matchedCards++;
 				} else {
 					
 					innerScore += (MISMATCH_PENALTY * -1);
@@ -98,10 +101,18 @@ static const int COST_TO_CHOOSE = 1;
                 innerScore += (COST_TO_CHOOSE * -1);
 				card.chosen = YES;
 			}
+            
 		}
-	}
+    }
+    
     self.currentScore = innerScore;
     self.score += innerScore;
+    
+    NSInteger result = self.cards.count - (self.matchedCards * 2);
+    if ((result == 2 && !card.isMatched) || result == 0) {
+        self.gameFinished = YES;
+    }
+    
 }
 
 
