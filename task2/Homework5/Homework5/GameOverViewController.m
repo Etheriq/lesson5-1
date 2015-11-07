@@ -29,7 +29,7 @@
 }
 
 - (void) viewDidAppear:(BOOL)animated {
-    [self performSelector:@selector(showDefaultView) withObject:nil afterDelay:3.0f];
+    [self performSelector:@selector(showDefaultView) withObject:nil afterDelay:5.0f];
 }
      
 - (void) showDefaultView {
